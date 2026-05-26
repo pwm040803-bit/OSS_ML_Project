@@ -26,7 +26,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2,random_sta
 print("학습 데이터 개수:", len(X_train))
 print("테스트 데이터 개수:", len(X_test))
 
-model = DecisionTreeClassifier(random_state=42)
+model = DecisionTreeClassifier( max_depth=4,random_state=42)
 
 model.fit(X_train, y_train)
 
